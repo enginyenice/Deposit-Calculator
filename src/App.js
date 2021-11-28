@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-
+// import ProjectNavbar from './components/ProjectNavbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from 'react-bootstrap';
+import DepositCalculator from './components/DepositCalculator';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {/* <Container fluid className='mb-2' >
+    <ProjectNavbar></ProjectNavbar>
+    </Container> */}
+    <Container className="mt-4">
+      {/* <ProjectAlert></ProjectAlert> */}
+      <DepositCalculator></DepositCalculator>
+    </Container>
+    </>
   );
 }
 
